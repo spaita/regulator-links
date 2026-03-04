@@ -11,7 +11,7 @@ A one-click bookmarklet that automatically opens all merchant review links in ba
 
 ## 🌐 Live Demo
 
-Visit: **https://anticssp.github.io/regulator-bookmarklet/**
+Visit: **https://spaita.github.io/regulator-bookmarklet/**
 
 ## 📊 Time Savings
 
@@ -21,7 +21,7 @@ Visit: **https://anticssp.github.io/regulator-bookmarklet/**
 
 ## 🛠️ Installation
 
-Visit the [installation page](https://anticssp.github.io/regulator-bookmarklet/) for step-by-step instructions.
+Visit the [installation page](https://spaita.github.io/regulator-bookmarklet/) for step-by-step instructions.
 
 ## 📝 License
 
