@@ -51,6 +51,25 @@
         
         .content {
             padding: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .two-column-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        @media (max-width: 1024px) {
+            .two-column-layout {
+                grid-template-columns: 1fr;
+            }
         }
         
         .benefits {
@@ -379,7 +398,7 @@
         
         <div class="content">
             <!-- Benefits Section -->
-            <div class="benefits">
+            <div class="benefits full-width">
                 <div class="benefit-card">
                     <div class="icon">⚡</div>
                     <h3>Save Time</h3>
@@ -397,86 +416,117 @@
                 </div>
             </div>
             
-            <!-- What It Opens -->
-            <div class="section">
-                <h2>📋 What It Opens</h2>
-                <div class="opens-list">
-                    <ul>
-                        <li>Business Name (Mo store)</li>
-                        <li>Owner Email (Google)</li>
-                        <li>Business (Google)</li>
-                        <li>Business Phone (Google)</li>
-                        <li>Activation Name (Google)</li>
-                        <li>Activation Phone (Google)</li>
-                        <li>TLO & TLO2</li>
-                        <li>Radiation</li>
-                        <li>Employee 2FA</li>
-                    </ul>
-                </div>
-                <p style="text-align: center; color: #94a3b8; margin-top: 15px;">
-                    <strong style="color: #60a5fa;">Excludes:</strong> Negative News
-                </p>
-            </div>
-            
-            <!-- Installation Steps -->
-            <div class="section">
-                <h2>📥 Installation (Takes 1 Minute)</h2>
-                
-                <div class="steps">
-                    <div class="step">
-                        <h3>Show Your Bookmarks Bar</h3>
-                        <p><strong>Mac:</strong> Press <span class="kbd">Cmd + Shift + B</span></p>
-                        <p><strong>Windows:</strong> Press <span class="kbd">Ctrl + Shift + B</span></p>
+            <!-- Two Column Layout -->
+            <div class="two-column-layout">
+                <!-- Left Column -->
+                <div>
+                    <!-- What It Opens -->
+                    <div class="section">
+                        <h2>📋 What It Opens</h2>
+                        <div class="opens-list">
+                            <ul>
+                                <li>Business Name (Mo store)</li>
+                                <li>Owner Email (Google)</li>
+                                <li>Business (Google)</li>
+                                <li>Business Phone (Google)</li>
+                                <li>Activation Name (Google)</li>
+                                <li>Activation Phone (Google)</li>
+                                <li>TLO & TLO2</li>
+                                <li>Radiation</li>
+                                <li>Employee 2FA</li>
+                            </ul>
+                        </div>
+                        <p style="text-align: center; color: #94a3b8; margin-top: 15px;">
+                            <strong style="color: #60a5fa;">Excludes:</strong> Negative News
+                        </p>
                     </div>
                     
-                    <div class="step">
-                        <h3>Create the Bookmarklet</h3>
-                        <p>Right-click anywhere on your bookmarks bar</p>
-                        <p>Click <strong>"Add Page..."</strong> or <strong>"Add Bookmark"</strong></p>
-                        <p><strong>Name:</strong> 📂 Open All Links (or whatever you prefer)</p>
+                    <!-- How to Use -->
+                    <div class="section">
+                        <h2>🎯 How to Use</h2>
+                        <div class="usage-steps">
+                            <ol>
+                                <li>Open any Regulator merchant review page</li>
+                                <li>Click the <strong>"📂 Open All Links"</strong> bookmark you just created</li>
+                                <li>All relevant tabs open automatically in the background</li>
+                                <li>You'll see an alert: "✅ Opened X tabs!"</li>
+                                <li>Start reviewing! 🎉</li>
+                            </ol>
+                        </div>
                     </div>
                     
-                    <div class="step">
-                        <h3>Copy & Paste the Code</h3>
-                        <p>Click the big green button below to copy the code</p>
-                        <p>Paste it into the <strong>URL</strong> field of your new bookmark</p>
-                        <p>Click <strong>Save</strong></p>
+                    <!-- Time Savings -->
+                    <div class="section">
+                        <h2>📊 Time Savings</h2>
+                        <div class="benefits">
+                            <div class="benefit-card">
+                                <div class="icon">📅</div>
+                                <h3>Per Day</h3>
+                                <p>~10 minutes (20 cases)</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="icon">📈</div>
+                                <h3>Per Week</h3>
+                                <p>~50 minutes saved</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="icon">🎯</div>
+                                <h3>Per Month</h3>
+                                <p>~3.5 hours saved</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Code Section -->
-                <div class="code-section">
-                    <h3>📝 The Code</h3>
-                    <div class="alert">
-                        <strong>Important:</strong> Make sure to copy the ENTIRE code including <code>javascript:</code> at the beginning!
+                <!-- Right Column -->
+                <div>
+                    <!-- Installation Steps -->
+                    <div class="section">
+                        <h2>📥 Installation (Takes 1 Minute)</h2>
+                        
+                        <div class="steps">
+                            <div class="step">
+                                <h3>Show Your Bookmarks Bar</h3>
+                                <p><strong>Mac:</strong> Press <span class="kbd">Cmd + Shift + B</span></p>
+                                <p><strong>Windows:</strong> Press <span class="kbd">Ctrl + Shift + B</span></p>
+                            </div>
+                            
+                            <div class="step">
+                                <h3>Create the Bookmarklet</h3>
+                                <p>Right-click anywhere on your bookmarks bar</p>
+                                <p>Click <strong>"Add Page..."</strong> or <strong>"Add Bookmark"</strong></p>
+                                <p><strong>Name:</strong> 📂 Open All Links (or whatever you prefer)</p>
+                            </div>
+                            
+                            <div class="step">
+                                <h3>Copy & Paste the Code</h3>
+                                <p>Click the big green button below to copy the code</p>
+                                <p>Paste it into the <strong>URL</strong> field of your new bookmark</p>
+                                <p>Click <strong>Save</strong></p>
+                            </div>
+                        </div>
+                        
+                        <!-- Code Section -->
+                        <div class="code-section">
+                            <h3>📝 The Code</h3>
+                            <div class="alert">
+                                <strong>Important:</strong> Make sure to copy the ENTIRE code including <code>javascript:</code> at the beginning!
+                            </div>
+                            <div class="code-box">
+                                <code id="bookmarklet-code">javascript:(function(){let count=0;const links=document.querySelectorAll('a');links.forEach(link=>{const href=link.href;const text=link.textContent.trim();if(!href||!href.startsWith('http')||href.includes('javascript'))return;const isNegativeNews=text.toLowerCase().includes('embezzle')||href.toLowerCase().includes('embezzle');if(isNegativeNews)return;const isRelevant=(href.includes('google.com/search')||text.match(/TLO|Radiation|Employee|2FA/i)||link.closest('.merchant-info'));if(isRelevant){window.open(href,'_blank');count++;}});setTimeout(()=>alert('✅ Opened '+count+' tabs!'),200);})();</code>
+                            </div>
+                            <button class="copy-btn" id="copy-btn" onclick="copyCode()">
+                                📋 Copy Code to Clipboard
+                            </button>
+                        </div>
                     </div>
-                    <div class="code-box">
-                        <code id="bookmarklet-code">javascript:(function(){let count=0;const links=document.querySelectorAll('a');links.forEach(link=>{const href=link.href;const text=link.textContent.trim();if(!href||!href.startsWith('http')||href.includes('javascript'))return;const isNegativeNews=text.toLowerCase().includes('embezzle')||href.toLowerCase().includes('embezzle');if(isNegativeNews)return;const isRelevant=(href.includes('google.com/search')||text.match(/TLO|Radiation|Employee|2FA/i)||link.closest('.merchant-info'));if(isRelevant){window.open(href,'_blank');count++;}});setTimeout(()=>alert('✅ Opened '+count+' tabs!'),200);})();</code>
-                    </div>
-                    <button class="copy-btn" id="copy-btn" onclick="copyCode()">
-                        📋 Copy Code to Clipboard
-                    </button>
                 </div>
             </div>
             
-            <!-- How to Use -->
-            <div class="section">
-                <h2>🎯 How to Use</h2>
-                <div class="usage-steps">
-                    <ol>
-                        <li>Open any Regulator merchant review page</li>
-                        <li>Click the <strong>"📂 Open All Links"</strong> bookmark you just created</li>
-                        <li>All relevant tabs open automatically in the background</li>
-                        <li>You'll see an alert: "✅ Opened X tabs!"</li>
-                        <li>Start reviewing! 🎉</li>
-                    </ol>
-                </div>
-            </div>
-            
-            <!-- Troubleshooting -->
-            <div class="section">
+            <!-- Troubleshooting - Full Width -->
+            <div class="section full-width">
                 <h2>⚠️ Troubleshooting</h2>
-                <div class="faq">
+                <div class="two-column-layout">
                     <div class="faq-item">
                         <h4>Nothing happens when I click it</h4>
                         <p>✓ Make sure the code starts with <code>javascript:</code> (no spaces)<br>
@@ -500,28 +550,6 @@
                         <h4>Bookmark disappeared</h4>
                         <p>✓ Re-create it following the steps above<br>
                         ✓ Make sure you clicked "Save" when creating it</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Time Savings -->
-            <div class="section">
-                <h2>📊 Time Savings</h2>
-                <div class="benefits">
-                    <div class="benefit-card">
-                        <div class="icon">📅</div>
-                        <h3>Per Day</h3>
-                        <p>~10 minutes (20 cases)</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon">📈</div>
-                        <h3>Per Week</h3>
-                        <p>~50 minutes saved</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon">🎯</div>
-                        <h3>Per Month</h3>
-                        <p>~3.5 hours saved</p>
                     </div>
                 </div>
             </div>
