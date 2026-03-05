@@ -412,7 +412,7 @@
                 <div class="benefit-card">
                     <div class="icon">🎯</div>
                     <h3>Smart Filter</h3>
-                    <p>Skips Negative News</p>
+                    <p>Skips Unnecessary Searches</p>
                 </div>
             </div>
             
@@ -425,13 +425,13 @@
                         <h2>📋 What It Opens</h2>
                         <div class="opens-list">
                             <ul>
-                                <li>Business Name (Mo store)</li>
+                                <li>User View</li>
                                 <li>Owner Email (Google)</li>
                                 <li>Business (Google)</li>
                                 <li>Business Phone (Google)</li>
                                 <li>Activation Name (Google)</li>
                                 <li>Activation Phone (Google)</li>
-                                <li>TLO & TLO2</li>
+                                <li>TLO2</li>
                                 <li>Radiation</li>
                                 <li>Employee 2FA</li>
                             </ul>
@@ -462,17 +462,17 @@
                             <div class="benefit-card">
                                 <div class="icon">📅</div>
                                 <h3>Per Day</h3>
-                                <p>~10 minutes (20 cases)</p>
+                                <p>~25 minutes (50 cases)</p>
                             </div>
                             <div class="benefit-card">
                                 <div class="icon">📈</div>
                                 <h3>Per Week</h3>
-                                <p>~50 minutes saved</p>
+                                <p>~2 hours saved</p>
                             </div>
                             <div class="benefit-card">
                                 <div class="icon">🎯</div>
                                 <h3>Per Month</h3>
-                                <p>~3.5 hours saved</p>
+                                <p>~8.5 hours saved</p>
                             </div>
                         </div>
                     </div>
@@ -513,7 +513,7 @@
                                 <strong>Important:</strong> Make sure to copy the ENTIRE code including <code>javascript:</code> at the beginning!
                             </div>
                             <div class="code-box">
-                                <code id="bookmarklet-code">javascript:(function(){let count=0;const links=document.querySelectorAll('a');links.forEach(link=>{const href=link.href;const text=link.textContent.trim();if(!href||!href.startsWith('http')||href.includes('javascript'))return;const isNegativeNews=text.toLowerCase().includes('embezzle')||href.toLowerCase().includes('embezzle');if(isNegativeNews)return;const isRelevant=(href.includes('google.com/search')||text.match(/TLO|Radiation|Employee|2FA/i)||link.closest('.merchant-info'));if(isRelevant){window.open(href,'_blank');count++;}});setTimeout(()=>alert('✅ Opened '+count+' tabs!'),200);})();</code>
+                                <code id="bookmarklet-code">javascript:(function(){let count=0;const links=document.querySelectorAll('a');links.forEach(link=>{const href=link.href;const text=link.textContent.trim();if(!href||!href.startsWith('http')||href.includes('javascript'))return;const isNegativeNews=text.toLowerCase().includes('embezzle')||href.toLowerCase().includes('embezzle');if(isNegativeNews)return;const isRelevant=(href.includes('google.com/search')||text.match(/TLO2|Radiation|Employee|2FA/i)||link.closest('.merchant-info'));if(isRelevant){window.open(href,'_blank');count++;}});setTimeout(()=>alert('✅ Opened '+count+' tabs!'),200);})();</code>
                             </div>
                             <button class="copy-btn" id="copy-btn" onclick="copyCode()">
                                 📋 Copy Code to Clipboard
